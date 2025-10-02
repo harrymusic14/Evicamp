@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*################################################################################################################################*/
+/* Navegador*/
+/*################################################################################################################################*/
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 10px 50px;
+    img {
+        width: 100px;
+        height: auto;
+    }
+    .nav-enlaces{
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        a {
+            text-decoration:  none;
+            font-weight: bold;
+            transition: 0.3s;
+            color: rgb(177, 173, 173);
+            display: inline-block;
+            font-size: 20px;
+        }
+        a:hover {
+            color: rgb(99, 96, 96);
+            transform: scale(1.2);
+        }
+    }
+}
