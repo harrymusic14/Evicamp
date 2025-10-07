@@ -114,3 +114,134 @@
     }
   }
 }
+/*##############################################################################################################################*/
+/* Visión y Misión*/
+/*##############################################################################################################################*/
+.vision-mision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem;
+  background-color: #b0ecc2;
+
+  .vision,
+  .mision {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    max-width: 800px;
+    .texto {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      flex: 3;
+
+      h2 {
+        font-size: 2.2rem; 
+        color: #222;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem; 
+        color: #444;
+        line-height: 1.8;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 15px;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.07);
+      }
+    }
+  }
+
+  .mision {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    .vision,
+    .mision {
+      max-width: 90%;
+      flex-direction: column;
+
+      img {
+        width: 85%;
+      }
+    }
+  }
+}
+/*##############################################################################################################################*/
+/*Footer*/
+/*##############################################################################################################################*/
+footer {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 5rem;
+  flex-wrap: wrap;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    i,
+    p {
+      font-size: 1.3rem; 
+    }
+  }
+
+  div:first-child {
+    i {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  div:last-child {
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    i {
+      font-size: 2.2rem; 
+      margin: 0 0.4rem;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        color: #f7b733;
+        transform: scale(1.15);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.8rem;
+  }
+}
+
