@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 
 // IMPORTAMOS EL LOGO Y SUPABASE
-import logoEvicamp from '../assets/logo.png';
+import logoEvicamp from '../assets/Logo.png';
 import { supabase } from '../db/supabase';
 
 interface SideBarProps {
