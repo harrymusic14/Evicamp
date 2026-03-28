@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../db/supabase';
 // IMPORTA TU LOGO AQUÍ. Asegúrate de tener esta imagen en tu carpeta de assets.
-import logoEvicamp from '../assets/logo.png'; 
+import logoEvicamp from '../assets/Logo.png'; 
 import imgProyectos from '../assets/proyectos.jpg';
 import imgInventario from '../assets/inventario.jpg';
 import imgFinanzas from '../assets/finanzas.jpg';
